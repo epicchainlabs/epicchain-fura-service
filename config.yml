@@ -1,0 +1,25 @@
+# Database credentials
+#database_dev:
+#  host: "s-uf63bd0cc5896674-pub.mongodb.rds.aliyuncs.com"
+#  port: "3717"
+#  user: "Vincent"
+#  pass: "QMRhLk9m8rqXWC3X9pMJ"
+#  dbname: "neofura"
+#  database: "neofura"
+database_main:
+#  host: "docker.for.mac.host.internal" 在服务器上要用这个
+  host: "127.0.0.1"
+  port: "27017"
+  user: "admin"
+  pass: "password"
+  dbname: "testdb"
+  database: "testdb"
+
+database_test:
+  #  host: "docker.for.mac.host.internal" 在服务器上要用这个
+  host: "127.0.0.1"
+  port: "27017"
+  user: ""
+  pass: ""
+  dbname: "testdb"
+  database: "testdb"
