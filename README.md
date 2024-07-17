@@ -24,7 +24,75 @@ The EpicChain-Fura-Product service serves as a bridge between users and the Epic
 - **User-Friendly API:** Simple and intuitive API for easy integration.
 - **High Performance:** Optimized for speed and reliability.
 
+## Installation
 
+To install the EpicChain-Fura-Product service, follow these steps:
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/EpicChain-Fura-Product.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```sh
+    cd EpicChain-Fura-Product
+    ```
+
+3. **Install dependencies:**
+    ```sh
+    go mod tidy
+    ```
+
+## Usage
+
+To start using the EpicChain-Fura-Product service, follow these steps:
+
+1. **Build the service:**
+    ```sh
+    go build -o epicchain-fura
+    ```
+
+2. **Run the service:**
+    ```sh
+    ./epicchain-fura
+    ```
+
+3. **Access the service API:**
+    The service will be available at `http://localhost:8080`. You can use any HTTP client (e.g., Postman, cURL) to interact with the API.
+
+## API Reference
+
+Here are some examples of how to use the API:
+
+- **Retrieve block data:**
+    ```http
+    GET /api/block/:blockNumber
+    ```
+
+    Example:
+    ```sh
+    curl http://localhost:8080/api/block/123456
+    ```
+
+- **Retrieve transaction data:**
+    ```http
+    GET /api/transaction/:transactionHash
+    ```
+
+    Example:
+    ```sh
+    curl http://localhost:8080/api/transaction/0xabc123...
+    ```
+
+- **Retrieve account balance:**
+    ```http
+    GET /api/account/:accountAddress/balance
+    ```
+
+    Example:
+    ```sh
+    curl http://localhost:8080/api/account/0xabc123.../balance
+    ```
 
 For detailed API documentation, refer to the [API Reference](docs/API.md) file.
 
